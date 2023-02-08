@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Credit Card Details Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="front-card">
+        <h3 class="logo"></h3>
+        <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+        <div class="data">
+            <p class="card-name" id="card-name">Juan Pérez</p>
+            <p class="card-date" id="card-date"> <span id="card-month">00</span>/<span id="card-year">00</span></p>
+        </div>
+    </div>
+    <div class="back-card">
+        <span class="security-code" id="security-code">000</span>
+    </div>
+    <div class="app">
+        <div class="violet-background"></div>
+        <div class="form-container">
+            <form action="" class="form" id="form">
+                <div class="titular">
+                    <label for="titular">Titular de la tarjeta</label>
+                    <input type="text" id="titular" placeholder="e.g. Juan Perez" name="titular" >
+                    <div id="errores-nombre" class="errores-nombre"></div>
+                </div>
+                <div class="numero-de-tarjeta">
+                    <label for="numero-de-tarjeta">Número de tarjeta</label>
+                    <input type="text" id="numero-de-tarjeta" name="numero-de-tarjeta" placeholder="e.g. 1111 2222 3333 4444">
+                    <div id="errores-numero" class="errores-numero"></div>
+                </div>
+                <div class="datos-tarjeta">
+                    <div class="fecha-de-vencimiento">
+                        <label for="fecha-de-vencimiento">Fecha de vencimiento</label>
+                        <div class="year-month-container">
+                            <div class="year-month">
+                                <input type="text" id="mes" name="fecha-de-vencimiento" placeholder="MM" >
+                                <input type="text" id="year" name="fecha-de-vencimiento" placeholder="YY">
+                            </div>
+                            
+                            <div id="errores-mes" class="errores-mes"></div>
+                            </div>
+                            <div id="errores-year" class="errores-year"></div>
+                            
+                    </div>
+                    <div class="clave-de-seguridad">
+                        <label for="clave-de-seguridad"> Clave de Seguridad</label>
+                        <input type="text" id="clave-de-seguridad" name="clave-de-seguridad" placeholder="e.g 123">
+                        <div id="errores-clave" class="errores-clave"></div>
+                    </div>
+                    
+                </div>
+                <input type="submit" value="Confirmar" id="confirmar" class="confirmar">
+            </form>
+        </div>
+    </div>
+    <div id="completed-state" class="completed-state hide">
+        <div class="completed-logo"></div>
+        <h3 class="thank-you">¡Gracias!</h3>
+        <p class="completed-paragraph">Hemos añadido los datos de su tarjeta.</p>
+        <button class="continue">Continuar</button>
+    </div>
+    
+</body>
+</html>

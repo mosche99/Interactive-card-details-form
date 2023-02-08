@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.violet-background {
+    width: 30%;
+    height: 100vh;
+    background-image: url('./images/bg-main-desktop.png');
+}
+
+.form-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+}
+
+.titular {
+    display: flex;
+    flex-flow: column;
+    gap: 1vh;
+}
+
+.numero-de-tarjeta {
+    display: flex;
+    flex-flow: column;
+    gap: 1vh;
+}
+
+.datos-tarjeta {
+    display: flex;
+    gap: 5vw;
+}
+
+.fecha-de-vencimiento {
+    display: inline-flex;
+    flex-flow: column;
+    gap: 1vh;
+    width: 50%;
+    justify-content: start;
+}
+
+.clave-de-seguridad {
+    display: inline-flex;
+    flex-flow: column;
+    gap: 1vh;
+    width: 50%;
+    justify-content: start;
+}
+
+.year-month-container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2.5vw;
+}
+
+.year-month {
+    display: flex;
+    gap: 2.5vw;
+}
+
+.confirmar{
+    margin-top: 2vh;
+}
+
+input {
+    border-width: 1px ;
+    height: 6vh;
+    border-radius: .5em;
+    color: hsl(278, 68%, 11%);
+    padding: 3%;
+    border-color: hsl(279, 6%, 55%,.2);
+}
+
+
+#confirmar {
+    width: 100%;
+    height:100%;
+    border-radius: .75em;
+    background:hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mes {
+    width: 50%;
+}
+
+#year {
+    width: 50%;
+}
+
+#clave-de-seguridad {
+    width: 100%;
+}
+
+::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+input:focus {
+    border: hsl(249, 99%, 64%);
+}
+
+
+
+.front-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    margin-left: 5%;
+    gap: 25%;
+    color: hsl(0, 0%, 100%);
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('/images/card-logo.svg');
+    background-repeat: no-repeat;
+    height: 47px;
+    width: 84px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.card-name {
+    margin-left: 10%;
+    font-size: 1.2em;
+    color:hsl(0, 0%, 100%);
+}
+
+.card-number {
+    margin-top: -5%;
+    margin-left: 10%;
+    font-size: 2em;
+    letter-spacing: .07em;
+    color:hsl(0, 0%, 100%);
+    
+}
+
+.card-date {
+    margin-right: 10%;
+    font-size: 1.2em;
+    color:hsl(0, 0%, 100%);
+}
+.data {
+    margin-top: -8%;
+}
+
+.back-card {
+    position: absolute;
+    height: 245px;
+    width: 447px;
+    background-image: url('/images/bg-card-back.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    margin-left:10%;
+    margin-top: 25%;
+}
+
+.security-code {
+    margin-top: 24%;
+    margin-right: 15%;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+}
+
+span {
+    color:hsl(0, 0%, 100%) ;
+    font-size: 1.2em;
+}
+
+.completed-state {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 33.5%;
+}
+
+.continue {
+    width: 472.14px;
+    height:100%;
+    border-radius: .75em;
+    background:hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px ;
+    height: 6vh;
+    border-radius: .5em;
+    padding: 3%;
+    border-color: hsl(279, 6%, 55%,.2);
+    margin-top: 5%;
+}
+
+.completed-logo {
+    background-image: url('/images/icon-complete.svg');
+    height: 80px;
+    width: 80px;
+}
+
+.completed-paragraph {
+    color:  hsl(279, 6%, 55%);
+    margin-top: 1%;
+}
+
+.thank-you {
+    color: hsl(278, 68%, 11%);
+    font-size: 2em;
+    margin-top: 4%;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    border-color:hsl(0, 100%, 66%);
+}
+
+.errores-nombre, .errores-numero, .errores-mes, .errores-year, .errores-clave {
+    color: hsl(0, 100%, 66%);
+}
+
+.errores-year {
+    display: none;
+}
+
+.errores-mes {
+    position: relative;
+    top: -25px;
+}
