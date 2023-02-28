@@ -16,7 +16,7 @@
 .violet-background {
     width: 30%;
     height: 100vh;
-    background-image: url('./images/bg-main-desktop.png');
+    background-image: url('images/bg-main-desktop.png');
 }
 
 .form-container {
@@ -131,7 +131,7 @@ input:focus {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background-image: url(/images/bg-card-front.png);
+    background-image: url('images/bg-card-front.png');
     background-repeat: no-repeat;
     height: 245px;
     width: 447px;
@@ -148,7 +148,7 @@ input:focus {
 }
 
 .logo {
-    background-image: url('/images/card-logo.svg');
+    background-image: url('images/card-logo.svg');
     background-repeat: no-repeat;
     height: 47px;
     width: 84px;
@@ -184,7 +184,7 @@ input:focus {
     position: absolute;
     height: 245px;
     width: 447px;
-    background-image: url('/images/bg-card-back.png');
+    background-image: url('images/bg-card-back.png');
     background-repeat: no-repeat;
     display: flex;
     justify-content: end;
@@ -236,7 +236,7 @@ span {
 }
 
 .completed-logo {
-    background-image: url('/images/icon-complete.svg');
+    background-image: url('images/icon-complete.svg');
     height: 80px;
     width: 80px;
 }
